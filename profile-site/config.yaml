@@ -1,0 +1,320 @@
+baseURL: https://heideggerlabs.com
+languageCode: en-us
+title: HeideggerLabs
+theme: hugo-profile
+
+# Menus:
+#   main:
+#     - identifier: blog
+#       name: Blog
+#       title: Blog posts
+#       url: /blog
+#       weight: 1
+
+    # Dropdown menu
+    # - identifier: dropdown
+    #   title: Example dropdown menu
+    #   name: Dropdown
+    #   weight: 2
+    # - identifier: dropdown1
+    #   title: example dropdown 1
+    #   name: example 1
+    #   url: /#
+    #   parent: dropdown
+    #   weight: 1
+    # - identifier: dropdown2
+    #   title: example dropdown 2
+    #   name: example 2
+    #   url: /#
+    #   parent: dropdown
+    #   weight: 2
+params:
+  title: "HeideggerLabs"
+  description: personal website for Jonathan Heidegger
+  # staticPath: ""  # The path to serve the static files from
+  favicon: "/images/fav.png"
+
+  # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
+  # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
+  # Note the lack of "" in true, it should be of boolean type.
+  useBootstrapCDN: false
+
+  # Whether the fade animations on the home page will be enabled
+  animate: true
+
+  theme:
+    disableThemeToggle: false
+    # defaultTheme: "light" # dark
+
+  # font:
+  #   fontSize: 1.5rem # default: 1rem
+  #   fontWeight: 500 # default: 400
+  #   lineHeight: 1 # default: 1.5
+  #   textAlign: right # default: left
+
+  # color preference
+  color:
+    #textColor: <value>
+    #secondaryTextColor: <value>
+    #backgroundColor: "#eba301"
+    #secondaryBackgroundColor: "#3b01a4"
+    primaryColor: "#eba301"
+    #secondaryColor: "#3b01a4"
+
+    darkmode:
+    # textColor:
+      secondaryTextColor: "#eba30"
+    # backgroundColor:
+    # secondaryBackgroundColor:
+      primaryColor: "#eba301"
+    #secondaryColor:
+
+  # If you want to customize the menu, you can change it here
+  # navbar:
+  #   align: mx-auto # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
+  #   brandLogo: "/logo.png" # Logo for the brand | default is the favicon variable
+  #   brandName: "Profile" # Brand name for the brand | default is the title variable
+
+  #   menus:
+  #     disableAbout: true
+  #     disableExperience: true
+  #     disableEducation: true
+  #     disableProjects: true
+  #     disableAchievements: true
+  #     disableContact: true
+
+  # Hero
+  hero:
+    enable: true
+    intro: "Hi, my name is"
+    title: "Jonathan Heidegger"
+    subtitle: "Robotics MS Student"
+    content: |-
+              jheidegg [at] umich [dot] edu 
+              
+              jonathan [at] heideggerlabs [dot] com
+    image: /images/profile.jpg
+    button:
+      enable: true
+      name: "Resume"
+      url: "https://github.com/jheidegger/Resume/raw/master/Jonathan%20Heidegger%20resume.pdf"
+      download: true 
+    socialLinks:
+      fontAwesomeIcons:
+        - icon: fab fa-github
+          url: https://github.com/jheidegger
+        - icon:  fas fa-envelope-open-text
+          url: mailto:jheidegg@umich.edu
+        - icon: fab fa-linkedin
+          url: https://www.linkedin.com/in/jonathan-heidegger-072320191/
+      # customIcons:
+      #   - icon: /fav.png
+      #     url: "https://example.com"
+
+  # About
+  about:
+    enable: true
+    title: "About Me"
+    image: "/images/WALC_fountain_square.jpg"
+    content: |-
+      I am a Robotics masters student at University of Michigan. Previously I completed my undergraduate in Computer Science from Purdue University. 
+
+      I am excited about exploratory robotics and leveraging autonomy to support science missions that go to the bottom of the ocean or into the depths of space. 
+
+      Outside of classes I enjoy playing tenor saxophone in band and mentoring high school students on FIRST Robotics Teams.
+    # skills:
+    #   enable: true
+    #   title: "Here are a few technologies I've been working with recently:"
+    #   items:
+    #     - "HTML"
+    #     - "CSS"
+    #     - "JavaScript"
+    #     - "React"
+    #     - "Node"
+    #     - "Express"
+
+  # Experience
+  experience:
+    enable: true
+    # title: "Custom Name"
+    items:
+      - job: "Controls Engineering Intern"
+        company: "Rolls-Royce"
+        companyUrl: "https://www.rolls-royce.com/"
+        date: "2021-2022"
+        content: |
+         - Created interface layer for legacy control software development in Ada with non-real time hardware unicorn emulator 
+         - Developed automated testing suite architecture for a legacy code base that was integrated into Jenkins release pipeline.
+         - Researched and presented a market readiness analysis of modern concurrent safety critical operating systems for engine control applications. 
+
+      - job: "Undergraduate Research Assistant"
+        company: "Purdue CRL"
+        companyUrl: "https://www.purdue.edu/crl/"
+        date: "2020 - 2022"
+        content: |
+          - Researched applications for omnidirectional robots in response to respiratory pandemics and small batch manufacturing
+          - Published as lead author for REMAR 2021 conference on modular robotics
+          - Interfaced frequently with faculty and Phd students in hybrid work environments
+      - job: "Project Manager"
+        company: "Team 3176"
+        companyUrl: "https://www.team3176.com/"
+        date: "2014 - 2018"
+        content: |
+          - Led the overall 70-member team in adherence to schedules, plans, and $30K+ budget 
+          - Facilitated team communication and represented team to sponsors, parents, and school administration
+      # - job: "Junior Software Developer"
+      #   company: "Apple"
+      #   companyUrl: "https://example.com"
+      #   date: "Jan 2020 - Aug 2020"
+      #   info:
+      #     enable: false
+      #   featuredLink:
+      #     enable: true
+      #     url: "https://example.com"
+      #   content: |
+      #     I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city.
+
+      #     - Lead backend developer for a product.
+      #     - Created a frontend design for a product.
+
+      # - job: "UI/UX Designer"
+      #   company: "Netflix"
+      #   companyUrl: "https://example.com"
+      #   date: "June 2017 - Nov 2019"
+      #   featuredLink:
+      #     enable: true
+      #     url: "https://example.com"
+      #   content: |
+      #     I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city.
+
+      #     - Lead backend developer for a product.
+      #     - Created a frontend design for a product.
+
+      # - job: "Product Designer"
+      #   company: "Google"
+      #   companyUrl: "https://example.com"
+      #   date: "Feb 2016 - Mar 2017"
+      #   content: "I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city."
+
+  # Education
+  education:
+    enable: true
+    # title: "Custom Name"
+    # index: true
+    items:
+      - title: "Master of Science in Robotics"
+        school:
+          name: "University of Michigan"
+          url: "https://robotics.umich.edu/"
+        logo: /images/michigan.png
+        date: "2022 - 2024"
+        GPA: "tbd"
+        content: |-
+          Relevant Coursework
+            - Math for Robotics, Robotics Systems, Avionics Navigation and Guidance of Aerospace Vehicles
+      - title: "Bachelor of Science in Computer Science"
+        logo: /images/purdue.png
+        school:
+          name: "Purdue University"
+          url: "https://www.purdue.edu/"
+        date: "2018 - 2022"
+        GPA: "3.8 out of 4.0"
+        content: |-
+          Relevant Coursework
+            - Robotics Systems, Operating Systems, Data Structures and Algorithms, Software Engineering
+          Extracurricular Activities
+            - "All-American" Marching Band Drum Major
+            - Purdue IEEE ROV Team
+            - Kappa Kappa Psi Honorary Band Fraternity
+            - Mortar Board
+        # featuredLink:
+        #   enable: true
+        #   name: "My academic record"
+        #   url: "https://example.com"
+      - title: "High School"
+        logo: /images/brownsburg.png
+        school:
+          name: "Brownsburg High School"
+          #url: "https://example.org"
+        content: |-
+          Extracurricular Activities
+              - FIRST Robotics Competition
+              - Concert and Marching Band
+  # Achievements
+  achievements:
+    enable: true
+    title: "Achievements and Leadership"
+    items:
+      - title: Purdue "All-American" Marching Band Drum Major
+        content: "Student leader for the 400 person marching band"
+      - title: Lilly Endowment Scholar Winner
+      - title: 2022 MATE Engineering MVP
+        content: "Individual award for outstanding technical presentation skills"
+      - title: Drum Corps International Colts, Boston Crusader
+      - title: Tom Miller Marching Band Scholarship Winner
+        content: "Full ride scholarship support for one year in honor of leadership within the band program"
+      - title: FIRST Dean's List Semifinalist
+
+  # projects
+  projects:
+    enable: true
+    # title: "Custom Name"
+    items:
+      - title: X14 ROV
+        content: ROS (Robot Operating System) node integration in Python and C++ for kinematics and control of 6DoF thrust mapping calculations for an underwater
+        image: /images/ROV.png
+        featured:
+          name: Learn More
+          link: https://heideggerlabs.com/project/x14
+        badges:
+          - "ROS"
+          - "Python"
+          - "C++"
+          - "Javascript"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/purduerov/X14-Core
+
+      # - title: Image Converter
+      #   content: A web app to convert image to pdf, png to jpg, png to jpg and png to webp without database using django.
+      #   image: /images/projects/converter.jpg
+      #   featured:
+      #     name: Demo
+      #     link: https://django-converter.herokuapp.com
+      #   # badges:
+      #   #   - "Django"
+      #   #   - "Bootstrap"
+      #   links:
+      #     - icon: fab fa-github
+      #       url: https://github.com/gurusabarish/converter
+
+      # - title: Hugo Profile V2
+      #   content: A clean and simple Hugo template for personal portfolio and blog.
+      #   image: /images/projects/profile2.jpg
+      #   featured:
+      #     name: Demo V2
+      #     link: https://hugo-profile-2.netlify.app
+      #   # badges:
+      #   #   - "Hugo"
+      #   #   - "Bootstrap"
+      #   #   - "Javascript"
+      #   links:
+      #     - icon: fab fa-github
+      #       url: https://github.com/gurusabarish/HugoProfileV2
+
+  #Contact
+  contact:
+    enable: true
+    #title: "Custom name"
+    content: My inbox is always open!
+    email: jheidegg@umichedu
+    btnName: Mail me
+
+  footer:
+    # recentPosts: false
+    # socialNetworks:
+    #   github: https://github.com
+    #   linkedin: https://linkedin.com
+    #   twitter: https://twitter.com
+    #   instagram: https://instagram.com
+    #   facebook: https://facebook.com

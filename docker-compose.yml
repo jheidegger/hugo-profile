@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  hugo:
+    restart: unless-stopped
+    image: jakejarvis/hugo-extended:latest
+    networks:
+      - nginx_default
+    ports:
+      - 1313:1313
+    volumes:
+      - ./profile-site:/src
+    command: server --buildFuture --disableLiveReload --bind 0.0.0.0
+networks:
+  nginx_default:
+    external: true  
