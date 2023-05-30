@@ -260,6 +260,20 @@ params:
     enable: true
     # title: "Custom Name"
     items:
+      - title: Proximity Operations
+        content: Mobile robotics testbed for spacecraft proximity operations. Hardware Implementations of experimental controllers such as Learning Reference Govener
+        image: /images/prox_ops_logo2.png
+        # featured:
+        #   name: Learn More
+        #   link: https://heideggerlabs.com/project/x14
+        badges:
+          - "ROS2"
+          - "Python"
+          - "C++"
+          - "Docker"
+        # links:
+        #   - icon: fab fa-github
+        #     url: https://github.com/purduerov/X14-Core
       - title: X14 ROV
         content: ROS (Robot Operating System) node integration in Python and C++ for kinematics and control of 6DoF thrust mapping calculations for an underwater
         image: /images/ROV.png
@@ -274,7 +288,27 @@ params:
         links:
           - icon: fab fa-github
             url: https://github.com/purduerov/X14-Core
-
+      - title: Homelab
+        content: Homelab virtualization setup combines a Truenas Scale storage array with a linux server running docker services such as the website you are visiting right now! Connection is managed with nginx for secure connections to services. Other services include, bitwarden, plex, nextcloud, pihole.
+        image: /images/homelabmap.png
+        badges:
+          - "Javascript"
+          - "Docker"
+          - "ZFS"
+          - "Virtualization"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/jheidegger/hugo-profile
+      - title: Project CRAB FRC 2018
+        content: Featuring custom swerve drive and command scheduler for autonomous actions. Complete javadoc documentation as a part of the first large scale code development project maintained over the course of a year for the FIRST Robotics Competition 2018.
+        image: /images/robot.jpg
+        badges:
+          - "Java"
+          - "Controls"
+          - "Documentation"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/jheidegger/Code_2018
       # - title: Image Converter
       #   content: A web app to convert image to pdf, png to jpg, png to jpg and png to webp without database using django.
       #   image: /images/projects/converter.jpg
