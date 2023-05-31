@@ -208,10 +208,13 @@ params:
           url: "https://robotics.umich.edu/"
         logo: /images/michigan.png
         date: "2022 - 2024"
-        GPA: "tbd"
+        GPA: "3.6"
         content: |-
           Relevant Coursework
-            - Math for Robotics, Robotics Systems, Avionics Navigation and Guidance of Aerospace Vehicles
+            - Math for Robotics, Robotics Systems
+            - Avionics Navigation and Guidance of Aerospace Vehicles
+            - Mobile Robotics
+            - Deep Learning for Robotics
       - title: "Bachelor of Science in Computer Science"
         logo: /images/purdue.png
         school:
