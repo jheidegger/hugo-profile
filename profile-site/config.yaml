@@ -97,7 +97,7 @@ params:
     button:
       enable: true
       name: "Resume"
-      url: "https://github.com/jheidegger/Resume/raw/master/Jonathan%20Heidegger%20resume.pdf"
+      url: "https://github.com/jheidegger/Resume-overleaf/raw/pdf/Jonathan_Heidegger_Resume.pdf"
       download: true 
     socialLinks:
       fontAwesomeIcons:
@@ -138,6 +138,12 @@ params:
     enable: true
     # title: "Custom Name"
     items:
+      - job: "Graduate Research Scholar"
+        company: "Airforce Research Labratory"
+        companyUrl: "https://www.afrl.af.mil/"
+        date: "2023 Summer"
+        content: |
+         -  Researched and implemented adaptive control methods for satellite proximity operations
       - job: "Controls Engineering Intern"
         company: "Rolls-Royce"
         companyUrl: "https://www.rolls-royce.com/"
